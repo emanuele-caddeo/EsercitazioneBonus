@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRAZIONE"
+                android:textSize="36dp" />
+
+            <!-- Username -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editUsername"
+                android:text=""
+                android:textSize="30dp" />
+
+            <!-- Password -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPassword"
+                android:text=""
+                android:inputType="textPassword"
+                android:textSize="30dp" />
+
+            <!-- Password ripetuta -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conferma password"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPasswordRipetuta"
+                android:text=""
+                android:inputType="textPassword"
+                android:textSize="30dp" />
+
+            <!-- Città -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Città"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editCitta"
+                android:text=""
+                android:textSize="30dp" />
+
+            <!-- Data di nascita -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data di nascita"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editDate"
+                android:text=""
+                android:textSize="30dp" />
+
+            <!-- Immagine di anteprima dell'immagine selezionata -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/placeholder"/>
+
+            <!-- Bottone per selezionare un'immagine -->
+            <Button
+                android:id="@+id/chooseImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scegli immagine" />
+
+            <!-- Messaggio d'errore -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36dp"
+                android:textColor="@color/white"
+                android:id="@+id/error"
+                android:background="@color/red"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <!-- Pulsante -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveButton"
+                android:text="REGISTRATI" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
